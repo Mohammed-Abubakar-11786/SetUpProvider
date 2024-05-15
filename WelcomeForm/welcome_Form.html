@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setup Form</title>
+    <link rel="stylesheet" href="welcome_Form.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="leftImage"></div>
+    <div class="rightImg"></div>
+    <div id="loadingOuter"></div>
+    <div id="loadingPg" style="display: none">
+      <div class="spinner-box">
+        <div class="leo-border-1">
+          <div class="leo-core-1"></div>
+        </div>
+        <div class="leo-border-2">
+          <div class="leo-core-2"></div>
+        </div>
+      </div>
+      <p style="font-weight: bolder; color: red">
+        Please Wait... <br />
+        Your Softwares are being SetUp
+      </p>
+    </div>
+
+    <div class="outer">
+      <div class="top">
+        <h2 style="color: rgb(0, 255, 0)">Welcome to your new Mac,Dan!</h2>
+      </div>
+      <div class="middle">
+        <div class="middleTop">
+          <div class="midLeft">
+            <img
+              src="https://i0.wp.com/temaghanastake.org/wp-content/uploads/2022/09/Logo_of_the_Church_of_Jesus_Christ_of_Latter-day_Saints.png?fit=1920%2C762&ssl=1"
+              alt=""
+            />
+          </div>
+
+          <div class="midRight">
+            <p>
+              To begin, please enter your Mac's
+              <b style="color: red">Asset Tag</b>, then click
+              <b style="color: red">Continue</b> to start applying Church
+              settings to your new Mac.
+            </p>
+            <p>
+              Once completed, the <b style="color: red">Quit</b> button will be
+              re-enabled and you'll be prompted to restart your Mac.
+            </p>
+            <p style="margin-bottom: 0px">
+              If you need assistance, please contact the GSD, +91 123456789 and
+              mention KB0057050.
+            </p>
+          </div>
+        </div>
+
+        <div class="middleBottom">
+          <div class="fields">
+            <div class="field">
+              <label for="name" class="form-label" style="color: rgb(242, 0, 0)"
+                >Computer Name :</label
+              >
+              <input
+                placeholder="Computer Name"
+                class="form-control"
+                type="text"
+                id="name"
+              />
+            </div>
+            <div class="field">
+              <label
+                class="form-label"
+                for="Uname"
+                style="color: rgb(242, 0, 0)"
+                >User Name :</label
+              >
+              <input
+                placeholder="User Name"
+                class="form-control"
+                type="text"
+                id="Uname"
+              />
+            </div>
+            <div class="field">
+              <label
+                class="form-label"
+                for="asstag"
+                style="color: rgb(242, 0, 0)"
+                >Asset Tag :</label
+              >
+              <input
+                placeholder="Please enter the seven-digit Asset Tag"
+                class="form-control"
+                type="text"
+                id="asstag"
+              />
+            </div>
+            <p>*Required Fields</p>
+          </div>
+          <div class="midRightOpt">
+            <div class="field">
+              <label class="form-label" for="dept" style="color: rgb(242, 0, 0)"
+                >Department :</label
+              >
+              <select class="form-select" id="dept">
+                <option value="Software">Software</option>
+                <option value="hardware">Hardware</option>
+              </select>
+            </div>
+            <div class="field">
+              <label class="form-label" for="B" style="color: rgb(242, 0, 0)"
+                >Seelect B :</label
+              >
+              <select class="form-select" id="b">
+                <option value="Software">Software</option>
+                <option value="hardware">Hardware</option>
+              </select>
+            </div>
+            <div class="field">
+              <label class="form-label" for="C" style="color: rgb(242, 0, 0)"
+                >Select C :</label
+              >
+              <select class="form-select" id="c">
+                <option value="Software">Software</option>
+                <option value="hardware">Hardware</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <p>1.5.0</p>
+        <div class="btns">
+          <button class="btn btn-light btn-sm">Quit</button>
+          <button id="contiBtn" type="submit" class="btn btn-primary btn-sm">
+            Continue
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="welcome_Form.js"></script>
+  </body>
+</html>
+
+<!-- 
+<div class="midRightComment field">
+  <h3
+    class="form-label"
+    style="color: rgb(76, 76, 250); font-weight: bolder"
+  >
+   
+Comment
+  </h3>
+  <input
+    class="form-control"
+    placeholder="Look familiar, Bart?"
+    id=""
+  ></input>
+</div> -->
